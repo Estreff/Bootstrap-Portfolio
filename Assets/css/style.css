@@ -5,7 +5,7 @@
 
 body {
 	margin:0;
-	height: 100%;
+
 }
 
 .wrapper {
@@ -21,7 +21,7 @@ body {
 
 .navbar-brand{
 	font-size: 25px;
-	padding:25px 40px;
+	padding:25px 60px;
 	color: white;
 	font-weight: bold;
 
@@ -32,6 +32,7 @@ body {
 	background-color: #4aaaa5;
 	height:80px;
 	border-bottom: 4px solid #666666;
+	margin-bottom: 0px;
 }
 
 .nav li a{
@@ -42,17 +43,28 @@ body {
 	font-weight: bold;
 }
 
+.nav li a:hover{
+	color:#4aaaa5;
+	}
+
 .active {
 	background-color: #3F8B87;
-	color:white;
+
 }
 
 .container {
+	height:auto;
+	margin:0;
+	padding:0;
 	width: 100%;
 	background-image: url("../images/concrete_subtle.png");
 }
 
-#container h2, h3 {
+.row {
+	margin:0;
+}
+
+.container h2, h3 {
 	color: #4aaaa5;
 	font-family: Georgia, Times, "Times New Roman", serif;
 	margin-bottom:10px;
@@ -62,7 +74,9 @@ body {
 #about {
 	border: 1px solid #dddddd; 
 	width:45%;
-	margin: 20px;
+	margin: 20px 10px 20px 25px;
+	color: #777777;
+	background-color: #ffffff;
 }
 
 #about hr {
@@ -72,9 +86,11 @@ body {
 #connect {
 	border: 1px solid #dddddd;
 	width:45%;
-	margin: 20px;
+	margin: 20px 10px 20px 25px;
 	padding:10px;
 	text-align:center;	
+	color: #777777;
+	background-color: #ffffff;
 }
 
 #connect hr {
@@ -82,15 +98,18 @@ body {
 	}
 
 .navbar-fixed-bottom {
-	width:960px;
-	margin:0 auto;
+	height: 80px;
 	border-top: 10px solid #4aaaa5;
 	background-color: #666666;
+	left: 0px;
+	bottom: 0px;
+	position: relative;
 }
 
-.navbar-text{
+.navbar-fixed-bottom p{
+	width: 100%;
 	color: #dddddd;	
-	line-height: 40px;
+	line-height: 60px;
 	text-align: center;
 }
 
