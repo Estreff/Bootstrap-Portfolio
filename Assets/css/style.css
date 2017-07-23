@@ -34,12 +34,14 @@ body {
 	margin-bottom: 0px;
 }
 
-.nav li a{
+.nav li span a{
 	width:100px;
 	line-height: 45px;
 	color:white;
 	text-align: center;
 	font-weight: bold;
+	padding-right: 10px;
+	display:block;
 }
 
 .nav li a:hover{
