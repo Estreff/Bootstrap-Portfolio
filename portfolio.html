@@ -1,85 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Erik Streff Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<title>Erik Streff Bootstrap Portfolio</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 	<div class="wrapper">
-		<header class="navbar">
-			<div id=name><h1>Erik Streff</h1></div>
-				<ul>
-					<li><a class="active" href="index.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-				
-		</header>
+		<nav class="navbar">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+		      <a class="navbar-brand">Erik Streff</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html">About</a></li>
+		        <li class="active"><a href="portfolio.html">Portfolio</a></li> 
+		        <li><a href="contact.html">Contact</a></li> 
+		      </ul>
+		    </div>
+		  </div>
+		</nav>	
+		
 
-
-		<div id=container>
-			<section class="portfolio">
-				<h2>Portfolio</h2>
-				<hr>
-
-				<ul>
-					
-					<li>
-					<a href="#"><img src="http://lorempixel.com/198/125/technics/1/cc/" height="125px">
-					<div class="port_name">Hangman</div>
-					</a>
-					</li>
-
-					<li>
-					<a href="#">
-					<img src="http://lorempixel.com/198/125/technics/2/cc/" height="125px">
-					<div class="port_name">RPG Game</div>
-					</a></li>
-					
-					<li>
-					<a href="#">
-					<img src="http://lorempixel.com/198/125/technics/5/cc/" height="125px">
-					<div class="port_name">Trivia Game</div>
-					</a></li>
-					
-					<li>
-					<a href="#">
-					<img src="http://lorempixel.com/198/125/technics/7/cc/" height="125px">
-					<div class="port_name">Rutgers Info Widget</div>
-					</a></li>
-				
-					<li>
-					<a href="#">
-					<img src="http://lorempixel.com/198/125/technics/9/cc/" height="125px">
-					<div class="port_name">Rock Paper Scissors</div>
-					</a></li>
-					
-					<li>
-					<a href="#">
-					<img src="">
-					<div></div>	
-					</a></li>
-					
-				</ul>	
-				
-			</section>
-			
-			<section id="connect">
-					<h3>Connect with Me</h3>
+		<div class="container-fluid">
+			<div class="row">
+				<section id="portfolio" class="container col-md-9 col-sm-12 col-xs-12">
+				<div class="portfolio_margin">
+					<h2>Portfolio</h2>
 					<hr>
-					<a href="https://github.com/estreff"><img src="assets/images/github_square_black-128.png" height="75px" width="75px"></a>
-					<a href="https://linkedin.com/in/estreff"><img src="assets/images/linkedin_square_color-128.png" height="75px" width="75px"></a>
-					<a href="https://stackoverflow.com/users/8128978/erik-streff"><img src="assets/images/stackoverflow-orange-128.png" height="75px" width="75px"></a>
-			</section>
+
+						<ul>
+							<div class="row">
+								<div class="col-md-6 col-sm-12 col-xs-12">	
+									<li>
+									<a href="#"><img src="http://lorempixel.com/198/125/technics/1/cc/" height="125px">
+									<div class="port_name">Hangman</div>
+									</a>
+									</li>
+
+									<li>
+									<a href="#">
+									<img src="http://lorempixel.com/198/125/technics/2/cc/" height="125px">
+									<div class="port_name">RPG Game</div>
+									</a></li>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-6 col-sm-12 col-xs-12">	
+									<li>
+									<a href="#">
+									<img src="http://lorempixel.com/198/125/technics/5/cc/" height="125px">
+									<div class="port_name">Trivia Game</div>
+									</a></li>
+									
+									<li>
+									<a href="#">
+									<img src="http://lorempixel.com/198/125/technics/7/cc/" height="125px">
+									<div class="port_name">Rutgers Info Widget</div>
+									</a></li>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-6 col-sm-12 col-xs-12">
+									<li>
+									<a href="#">
+									<img src="http://lorempixel.com/198/125/technics/9/cc/" height="125px">
+									<div class="port_name">Rock Paper Scissors</div>
+									</a></li>
+									
+									<li>
+									<a href="#">
+									<img src="">
+									<div></div>	
+									</a></li>
+								</div>
+							</div>
+						</ul>
+					</div>	
+				</section>
+
+				
+				<section id="connect" class=" container col-md-3 col-sm-12 col-xs-12">
+					<div class="connect_margin">	
+						<h3>Connect with Me</h3>
+						<hr>
+						<a href="https://github.com/estreff"><img src="Assets/images/github_square_black-128.png" alt="Github" height="60px" width="60px"></a>
+						<a href="https://linkedin.com/in/estreff"><img src="Assets/images/linkedin_square_color-128.png" alt="LinkedIn" height="60px" width="60px"></a>
+						<a href="https://stackoverflow.com/users/8128978/erik-streff"><img src="Assets/images/stackoverflow-orange-128.png" alt="StackOverflow" height="60px" width="60px"></a>	
+					</div>				
+				</section>
+
+			</div>			
 		</div>
 
+		<footer>
+      		<p><span> &copy; 2017 Coded by Erik Streff</span></p>
+    	</footer>
 
-	  	<footer>
-	      <p><span> &copy; 2017 Written and Coded by Erik Streff</span></p>
-	    </footer>
 	</div>
 
 
 </body>
 </html>
+
+
+
