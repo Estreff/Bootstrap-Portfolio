@@ -18,10 +18,11 @@ body {
 	background-color: white;
 }
 
-.navbar-brand{
-	font-size: 6vh;
+.navbar-header h1{
+	/*font-size: 6vh;*/
 	color: white;
 	font-weight: bold;
+	margin-left:20px;
 }
 
 
@@ -32,18 +33,21 @@ body {
 }
 
 
+
+
 .nav li a{
 	width:100px;
 	line-height: 45px;
 	color:white;
 	text-align: center;
 	font-weight: bold;
-	padding-right: 10px;
+	padding-right: 10px; 
 	display:block;
 }
 
 .nav li a:hover{
 	color:#4aaaa5;
+	
 	}
 
 .active {
@@ -51,7 +55,7 @@ body {
 }
 
 .container-fluid {
-	height: auto;
+
 	background-image: url("../images/concrete_subtle.png");
 	border-radius:5px;
 }
@@ -96,17 +100,22 @@ body {
 }
 
 .port_name{
+	height: 30%;
 	font-size: 3vh;
 	font-style: bold;
 	font-family: sans-serif;
 	width:100%;
-	line-height: 40px;
 	text-align: center;
 	background-color: #4aaaa5;
 	color:#ffffff;
 	font-family: Times;
 	position:relative;
-	bottom: 80px;
+	bottom: 70px;
+}
+
+.port_name h4 {
+	margin:0px;
+	padding:10px;
 }
 
 .form-group {
@@ -143,7 +152,7 @@ footer {
 	vertical-align: middle;
 	left: 0px;
 	bottom: 0px;
-	position: relative;
+	position:relative;
 }
 
 button[type=submit]{
