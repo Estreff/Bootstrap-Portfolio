@@ -21,9 +21,10 @@ body {
 
 .navbar-brand{
 	font-size: 25px;
-	padding:25px 60px;
+	padding: 25px 60px;
 	color: white;
 	font-weight: bold;
+	line-height: 10px;
 
 }
 
@@ -33,6 +34,7 @@ body {
 	border-bottom: 4px solid #666666;
 	margin-bottom: 0px;
 }
+
 
 .nav li a{
 	width:100px;
@@ -70,6 +72,10 @@ body {
 	font-weight: bold;
 }
 
+.main-content {
+	/*height:1140px;*/
+}
+
 .about_margin {
 	background-color: #ffffff;
 	border: 1px solid #dddddd; 
@@ -94,6 +100,7 @@ body {
 	}
 
 .about_margin img {
+	border: 1px solid red;
 	margin-bottom: 20px;
 	margin-left: 0px;
 }
@@ -136,10 +143,11 @@ body {
 
 .portfolio_margin img {
 	margin-bottom: 20px;
-	align-items: center;
+	/*align-items: center;*/
 }	
 
 .port_name{
+	font-size: 24px;
 	width:100%;
 	line-height: 40px;
 	text-align: center;
