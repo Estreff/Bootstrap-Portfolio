@@ -36,7 +36,8 @@ body {
 
 
 .nav li a{
-	width:100px;
+	/*width:100px;*/
+	min-width: 100px;
 	line-height: 45px;
 	color:white;
 	text-align: center;
@@ -49,6 +50,11 @@ body {
 	color:#4aaaa5;
 	
 	}
+
+.navbar-right > li > a {
+	/*width: 100%;*/
+	display: block;
+}
 
 .active {
 	background-color: #3F8B87;
